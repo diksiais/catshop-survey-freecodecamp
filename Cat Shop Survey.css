@@ -1,0 +1,106 @@
+body {
+  width: 100%;
+  height: 100vh;
+  margin: 0;
+  background-color: #002147;
+  color: #f5f6f7;
+  font-family: Tahoma, sans-serif;
+  font-size: 16px;
+}
+
+h1, p {
+  margin: 1em auto;
+  text-align: center;
+}
+
+form {
+  width: 60vw;
+  max-width: 500px;
+  min-width: 300px;
+  margin: 0 auto;
+  padding-bottom: 2em;
+}
+
+fieldset {
+  border: none;
+  padding: 1em 0;
+}
+
+label {
+  display: block;
+  margin: 0.75rem 0 0.25rem;
+}
+
+input,
+textarea,
+select {
+  margin: 10px 0 0 0;
+  width: 100%;
+  min-height: 2em;
+}
+
+input, textarea {
+  background-color: #0a0a23;
+  border: 1px solid #0a0a23;
+  color: #ffffff;
+}
+
+.inline {
+  width: unset;
+  margin: 0 0.5em 0 0;
+  vertical-align: middle;
+}
+
+input[type="submit"] {
+  display: block;
+  width: 60%;
+  margin: 1em auto;
+  height: 2em;
+  font-size: 1.1rem;
+  background-color: #3b3b4f;
+  border-color: 1px white;
+  min-width: 200px;
+}
+
+input[type="file"] {
+  padding: 1px 2px;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+  margin-right: 0.5em;
+  margin-left: 1em;
+}
+
+body {
+  position: relative;
+  background-color: #1b1b32; /* fallback color */
+  overflow: hidden;
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+
+  background: url('https://images.unsplash.com/photo-1555685812-4b943f1cb0eb') no-repeat center center fixed;
+  background-size: cover;
+
+  filter: blur(8px);
+  z-index: -2;
+}
+
+body::after {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+
+  background-color: rgba(0, 33, 71, 0.6); /* biru dongker semi transparan */
+  z-index: -1;
+}
