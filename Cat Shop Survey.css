@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Meow Cat Shop</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+      <h1 id="title">Meow Cat Shop Customer Satisfaction Survey</h1>
+      <p id="description">Please fill out this form with the required information</p>
+    <form id="survey-form">
+      <fieldset>
+        <label id="name-label" for="name">Enter Your Name: <input id="name" type="text" placeholder="Mona Lisa" required/></label>
+        <label id="email-label" for="email">Enter Your Email: <input id="email" type="Email" placeholder="cutecat@xmail.com" required/></label>
+        <label id="number-label" for="number">Enter how many cats you have:  <input id="number" type="number" min="1" max="50" placeholder="please enter the number. Ex.=3" required/></label>
+      </fieldset>
+      <fieldset>
+        <label for="dropdown">What do you like about Meow Cat Shop?
+          <select id="dropdown" name="dropdown">
+            <option value="">Cat Grooming</option>
+            <option value="1">Cat Hotel</option>
+            <option value="2">Cat Adoption Services</option>
+            <option value="3">Cat Foods</option>
+            <option value="4">Toy & Accessory Recommendations</option>
+          </select>
+        </label> 
+      </fieldset>
+      <fieldset>
+        <label>How do you feel about our service?</label>
+        <label for="satisfied">
+          <input id="satisfied" type="radio" name="satisfaction" class="inline" value="satisfied" checked/>Satisfied
+        </label>
+        <label for="not-satisfied">
+          <input id="not-satisfied" type="radio" name="satisfaction" class="inline" value="not-satisfied" />Not Satisfied
+        </label>
+        <label>What aspect we have to improve?</label>
+        <label><input class="inline" id="product-availability" value="product-availability" type="checkbox"/>Product-availability</label>
+        <label><input class="inline" id="services" value="services" type="checkbox"/>Quality of Services</label>
+        <label><input class="inline" id="info" value="info" type="checkbox"/>Clarity of Information</label>
+        <label for="suggestion">What is your suggestion for us?
+            <textarea id="bio" name="suggestion" rows="3" cols="30" placeholder="Write here"></textarea>
+        </label>
+      </fieldset>
+      <input id="submit" type="submit" value="Submit" />
+    </form> 
+  </body>
+</html>
