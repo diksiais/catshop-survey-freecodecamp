@@ -75,7 +75,7 @@ input[type="checkbox"] {
 body {
   position: relative;
   background-color: #1b1b32; /* fallback color */
-  overflow: hidden;
+  overflow: auto;
 }
 
 body::before {
